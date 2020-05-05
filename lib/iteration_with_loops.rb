@@ -5,14 +5,14 @@ def find_min_in_nested_arrays(src)
   newArr = []
   while a < src.length do
     b = 0 
+    min_num = src[a][0]
     while b < src[a].length do
-      min_num = 100
       if src[a][b] < min_num
         min_num = src[a][b]
       end
-      newArr << min_num
       b+=1
     end
+    newArr << min_num
     a+=1
   end
   newArr
